@@ -1,0 +1,10 @@
+{"web":
+  {
+    "client_id":"270784744864-2cfkncn7lougv15jgi32m7sd6da4cduc.apps.googleusercontent.com",
+    "project_id":"sodium-atrium-138923",
+    "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+    "token_uri":"https://accounts.google.com/o/oauth2/token",
+    "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret":"gvXIMH7DZ8jlA5HXOCRiHv4P"
+  }
+}
