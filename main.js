@@ -38,13 +38,13 @@ function createWindow () {
 
 function init() {
 
-  // tray = new Tray(path.join(__dirname, '/res/icon.png'))
-  // const contextMenu = Menu.buildFromTemplate([
-  //   { label: 'Open Inbox',  id: 'open', click: function() { if (mainWindow == undefined) { createWindow() } else { mainWindow.show }}},
-  //   { label: 'Quit',        id: 'quit', click: function() { app.quit(); } }
-  // ])
-  // tray.setToolTip('MyInbox')
-  // tray.setContextMenu(contextMenu)
+   tray = new Tray(path.join(__dirname, '/res/icon.png'))
+   const contextMenu = Menu.buildFromTemplate([
+     { label: 'Open Inbox',  id: 'open', click: function() { if (mainWindow == undefined) { createWindow() } else { mainWindow.show }}},
+     { label: 'Quit',        id: 'quit', click: function() { app.quit(); } }
+   ])
+   tray.setToolTip('MyInbox')
+   tray.setContextMenu(contextMenu)
 
   //aggiungere login e aggiungere http get numero unread messages
   //https://github.com/parro-it/electron-google-oauth
@@ -63,9 +63,9 @@ app.on('ready', init)
 app.on('window-all-closed', function () {
   // On OS X it is common for applications and their menu bar
   // to stay active until the user quits explicitly with Cmd + Q
-  if (process.platform !== 'darwin') {
-    app.quit()
-  }
+  //if (process.platform !== 'darwin') {
+    //app.quit()
+  //}
 })
 
 app.on('activate', function () {
